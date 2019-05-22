@@ -94,6 +94,7 @@
 
 % Used to format job listing
 \newenvironment{rSubsection}[6]{
+  \smallskip
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
   %%    Employer (bold)                     Dates (regular)              %%
   %%    Title (emphasis)                Location (emphasis)              %%
