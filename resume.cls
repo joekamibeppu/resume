@@ -100,19 +100,22 @@
   %%    Title (emphasis, optional)      Location (emphasis, optional)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   {\bf #1}                 \hfill                  {    #2}% Stop a space
+  \smallskip
   \ifthenelse{\equal{#3}{}}{}{
   \\
-  {\em #3}                 \hfill                  {    #4}% Stop a space
+  {\em #3}                 \hfill                  {\em    #4}% Stop a space
+  \smallskip
   % add second job title only if it was provided
   \def\temp{#5}\ifx\temp\empty
   \else
     \\
-    {\em #5}                 \hfill                {    #6}% Stop a space
+    {\em #5}                 \hfill                {\em    #6}% Stop a space
+    \smallskip
   \fi
   }\smallskip
   % \cdot used for bullets, items non-indented
   \begin{list}{$\cdot$}{\leftmargin=0em}
-  \itemsep -0.5em \vspace{-0.5em}
+  \itemsep -0.4em \vspace{-0.5em}
 }{
   \end{list}
   \vspace{0.5em}
